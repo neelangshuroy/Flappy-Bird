@@ -15,17 +15,6 @@ SCREEN = pygame.display.set_mode((960,686))
 BIRD = 'Game sprites/flappy_bird.png'
 GAME_SPRITES,GAME_SOUNDS={},{}
 FPS=30
-
-'''def min(a,b,c,d):
-    num=[abs(a-b),abs(a-c),abs(a-d)]
-    h=abs(a-b)
-    for i in range(1,3):
-        if h>num[i]:
-            h=num[i]
-    for i in range(3):
-        if h==num[i]:
-            return i'''
-
 def welcome():
     GAME_SOUNDS['welcomeMusic'].play()
     kk=GAME_SPRITES['play']
@@ -207,15 +196,7 @@ def gameover():
         FPSCLOCK.tick(FPS)
 
 def roll():
-
     w=[960, 960+310, 960+620, 960+930]
-
-    '''t=[
-        random.randint(250,400),
-        random.randint(250,400),
-        random.randint(250,400),
-        random.randint(250,400)
-    ]'''
     t=[
         random.randint(250,400),
         random.randint(250,400),
